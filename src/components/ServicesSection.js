@@ -24,7 +24,6 @@ const services = [
     description: 'Expert guidance to navigate complex challenges and achieve success.',
     logo: '/logos/service4.png',
   },
-  // Add more services as needed
 ];
 
 const ServicesSection = () => {
@@ -33,8 +32,7 @@ const ServicesSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-    }, 3000); // Slide change every 3 seconds
-
+    }, 3000); 
     return () => clearInterval(interval);
   }, []);
 

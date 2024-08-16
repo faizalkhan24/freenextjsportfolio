@@ -3,7 +3,7 @@ import { FaMailBulk, FaPhone, FaMapMarkerAlt, FaTwitter, FaLinkedin, FaGithub } 
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-800  border-t border-gray-600 text-white py-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1: Company Info */}

@@ -18,10 +18,10 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">
-            <Link href="/#about">
+            <Link href="/aboutus">
               <span className="hover:text-green-300">About</span>
             </Link>
-            <Link href="/#services">
+            <Link href="/services">
               <span className="hover:text-green-300">Services</span>
             </Link>
             <Link href="/#projects">
@@ -69,7 +69,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-700 border-t border-gray-600">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/#about">
+            <Link href="/aboutus">
               <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600">
                 About
               </span>
