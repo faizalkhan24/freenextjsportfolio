@@ -4,6 +4,7 @@ import Link from "next/link";
 const images = [
   { src: "/images/sahil.png", alt: "3D Image 1", context: "Innovative Security Solutions" },
   { src: "/images/sahil.png", alt: "3D Image 2", context: "Advanced Threat Protection" },
+  { src: "/images/sahil.png", alt: "3D Image 3", context: "Comprehensive Cybersecurity Consulting" },
   // Add more images and contexts as needed
 ];
 
@@ -38,12 +39,12 @@ const Header = () => {
           ))}
         </div>
         <div className={`flex-1 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8`}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to CyberSecExpert</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to CyberSec Corp</h1>
           <p className="text-lg md:text-xl mb-6">
             {images[currentImage].context}
           </p>
-          <Link href="services" className="inline-block px-6 py-3 bg-ten text-white font-semibold rounded-lg hover:bg-ten transition duration-300">
-            Explore Our Services
+          <Link href="/services" className="inline-block px-6 py-3 bg-ten text-white font-semibold rounded-lg hover:bg-ten transition duration-300">
+            Discover Our Solutions
           </Link>
         </div>
       </div>

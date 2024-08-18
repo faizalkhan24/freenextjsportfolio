@@ -1,6 +1,6 @@
-// components/ProjectsSection.js
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa";
 
 const ProjectsSection = () => {
   const [projects, setProjects] = useState([]);
@@ -12,36 +12,53 @@ const ProjectsSection = () => {
           id: "1",
           title: "Project Alpha",
           description: "Description for Project Alpha",
-          imageUrl: "https://via.placeholder.com/400x250?text=Project+Alpha",
+          imageUrl: "https://images.pexels.com/photos/256795/pexels-photo-256795.jpeg", // Cybersecurity image
+          rating: 4, // Add rating
         },
         {
           id: "2",
           title: "Project Beta",
           description: "Description for Project Beta",
-          imageUrl: "https://via.placeholder.com/400x250?text=Project+Beta",
+          imageUrl: "https://images.pexels.com/photos/1181353/pexels-photo-1181353.jpeg", // Cybersecurity image
+          rating: 5, // Add rating
         },
         {
           id: "3",
           title: "Project Gamma",
           description: "Description for Project Gamma",
-          imageUrl: "https://via.placeholder.com/400x250?text=Project+Gamma",
+          imageUrl: "https://images.pexels.com/photos/60504/pexels-photo-60504.jpeg", // Cybersecurity image
+          rating: 3, // Add rating
         },
         {
           id: "4",
           title: "Project Delta",
           description: "Description for Project Delta",
-          imageUrl: "https://via.placeholder.com/400x250?text=Project+Delta",
+          imageUrl: "https://images.pexels.com/photos/1919705/pexels-photo-1919705.jpeg", // Cybersecurity image
+          rating: 4, // Add rating
         },
       ];
 
-      const sortedprojet = dummyProjects.sort(
+      const sortedProjects = dummyProjects.sort(
         (a, b) => new Date(b.date) - new Date(a.date)
       );
-      setProjects(sortedprojet.slice(0, 3));
+      setProjects(sortedProjects.slice(0, 3));
     };
 
     fetchProjects();
   }, []);
+
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <FaStar
+          key={i}
+          className={i <= rating ? 'text-yellow-500' : 'text-gray-500'}
+        />
+      );
+    }
+    return stars;
+  };
 
   return (
     <section className="py-16 bg-sixty text-white">
@@ -66,7 +83,10 @@ const ProjectsSection = () => {
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-400 mb-4">{project.description}</p>
+              <p className="text-gray-400 mb-2">{project.description}</p>
+              <div className="flex items-center mb-4">
+                {renderStars(project.rating)}
+              </div>
               <Link href={`/projects/${project.id}`}>
                 <span className="text-ten hover:underline">
                   View Details
