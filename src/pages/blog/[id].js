@@ -46,17 +46,50 @@ export default function BlogPost() {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
         <p className="text-gray-400 mb-4">{new Date(post.date).toLocaleDateString()} - By {post.author}</p>
-        <Image
-          src={post.image}
-          alt={post.title}
-          width={800}
-          height={400}
-          className="w-full h-64 object-cover rounded-lg mb-8"
-        />
+        
+        {/* Display the image if available */}
+        {post.image && (
+          <Image
+            src={post.image}
+            alt={post.title}
+            width={800}
+            height={400}
+            className="w-full h-64 object-cover rounded-lg mb-8"
+          />
+        )}
+        
+        {/* Display the video if available */}
+        {post.video && (
+          <div className="mb-8">
+            <video className="w-full rounded-lg" controls>
+              <source src={post.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )}
+        
+        {/* Render content */}
         <div
-          className="prose prose-lg prose-invert"
+          className="prose prose-lg prose-invert mb-8"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/* Render tags */}
+        {post.tags && post.tags.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-2">Tags:</h3>
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="bg-gray-700 text-white py-1 px-3 rounded-full text-sm"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
