@@ -1,12 +1,13 @@
 // components/TeamCard.js
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image'; // Import the Image component
 
 const TeamCard = ({ photo, name, jobTitle, education, email, facebook, linkedin, instagram }) => {
   return (
     <div className="card bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center transition-transform transform hover:scale-105 duration-300 ease-in-out">
       <div className="card-image w-full">
-        <img src={photo} alt={name} className="w-full h-48 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110" />
+        <Image src={photo} alt={name} className="w-full h-48 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110" />
       </div>
       <div className="card-info p-4 flex flex-col items-center text-center">
         <h3 className="text-xl font-semibold mb-2 transition-transform duration-300 ease-in-out transform hover:scale-105">{name}</h3>

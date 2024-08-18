@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Image from 'next/image'; // Import the Image component
 
 export default function BlogPost() {
   const router = useRouter();
@@ -99,7 +100,7 @@ export default function BlogPost() {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
         <p className="text-gray-400 mb-4">{post.date} - By {post.author}</p>
-        <img
+        <Image
           src={post.coverPhoto}
           alt={post.title}
           className="w-full h-64 object-cover rounded-lg mb-8"

@@ -1,7 +1,6 @@
-// pages/projects/[id].js
-
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import Image from 'next/image'; // Import the Image component
 
 const ProjectDetailPage = () => {
   const router = useRouter();
@@ -41,7 +40,7 @@ const ProjectDetailPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
       <div className="max-w-4xl mx-auto">
-        <img
+        <Image
           src={project.imageUrl}
           alt={project.title}
           className="w-full h-80 object-cover rounded-lg mb-8"

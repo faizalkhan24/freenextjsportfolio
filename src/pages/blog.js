@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image'; // Import the Image component
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -45,7 +46,7 @@ export default function Blog() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <div key={post.id} className="bg-gray-700 p-2 rounded-lg shadow-lg hover:bg-gray-600 transition">
-            <img
+            <Image
               src={post.coverPhoto}
               alt={post.title}
               className="w-full h-48 object-cover rounded-lg mb-4"

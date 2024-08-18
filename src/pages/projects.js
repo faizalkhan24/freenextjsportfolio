@@ -1,12 +1,10 @@
-// pages/projects/index.js
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; 
 
 const ProjectPage = () => {
   const [projects, setProjects] = useState([]);
-
-  const fetchProjects = async () => {
+  const fetchProjects = useCallback(async () => {
     try {
       const response = await fetch('/api/projects');
       const data = await response.json();
@@ -15,11 +13,11 @@ const ProjectPage = () => {
       console.error('Error fetching projects:', error);
       setProjects(dummyProjects);
     }
-  };
+  }, []); 
 
   useEffect(() => {
     fetchProjects();
-  }, []);
+  }, [fetchProjects]); 
 
   const dummyProjects = [
     {
@@ -63,10 +61,12 @@ const ProjectPage = () => {
         {projects.length > 0 ? (
           projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
+              <Image
                 src={project.imageUrl}
                 alt={project.title}
                 className="w-full h-48 object-cover"
+                width={600} 
+                height={300}
               />
               <div className="p-6">
                 <h2 className="text-white text-2xl mb-4">{project.title}</h2>

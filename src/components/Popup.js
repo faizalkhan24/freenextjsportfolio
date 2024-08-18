@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
+import Image from 'next/image'; // Import the Image component
 
 const Popup = ({ service, onClose }) => {
   return (
@@ -9,7 +10,7 @@ const Popup = ({ service, onClose }) => {
           <FaTimes size={24} />
         </button>
         <div className="flex items-center space-x-4">
-          <img src={service.logo} alt={service.title} className="w-16 h-16 object-contain" />
+          <Image src={service.logo} alt={service.title} className="w-16 h-16 object-contain" />
           <div>
             <h2 className="text-3xl font-semibold text-gray-800">{service.title}</h2>
             <p className="mt-2 text-gray-700">{service.fullDescription}</p>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from 'next/image'; // Import the Image component
 
 const images = [
   { src: "/images/sahil.png", alt: "3D Image 1", context: "Innovative Security Solutions" },
@@ -25,7 +26,7 @@ const Header = () => {
       <div className="absolute inset-0 flex">
         <div className={`flex-1 flex justify-center items-center relative overflow-hidden`}>
           {images.map((image, index) => (
-            <img
+            <Image
               key={index}
               src={image.src}
               alt={image.alt}
