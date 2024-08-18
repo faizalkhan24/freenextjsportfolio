@@ -1,4 +1,3 @@
-// components/ServicesSection.js
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 
@@ -38,9 +37,9 @@ const ServicesSection = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % (services.length - servicesPerPage + 1));
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId); 
   }, []);
 
   return (

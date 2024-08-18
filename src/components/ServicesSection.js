@@ -1,63 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
-// Sample services data with logos
+// Sample services data
 const services = [
   {
-    title: 'Service 1',
-    description: 'Comprehensive service offering that includes detailed insights and expert support to meet your needs.',
-    logo: '/logos/service1.png',
+    title: 'Network Security',
+    description: 'Protect your network from unauthorized access, misuse, and hacking.',
+    icon: '🔒',
   },
   {
-    title: 'Service 2',
-    description: 'Innovative solutions designed to enhance your business efficiency and growth.',
-    logo: '/logos/service2.png',
+    title: 'Penetration Testing',
+    description: 'Identify vulnerabilities in your systems before attackers do.',
+    icon: '🛡️',
   },
   {
-    title: 'Service 3',
-    description: 'Tailored strategies to optimize your processes and drive results.',
-    logo: '/logos/service3.png',
+    title: 'Incident Response',
+    description: 'Minimize damage and recover quickly from security breaches.',
+    icon: '🚨',
   },
   {
-    title: 'Service 4',
-    description: 'Expert guidance to navigate complex challenges and achieve success.',
-    logo: '/logos/service4.png',
+    title: 'Security Audits',
+    description: 'Comprehensive analysis of your organization’s security posture.',
+    icon: '📝',
   },
 ];
 
 const ServicesSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-    }, 3000); 
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-800 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-gray-900">Our Services</h2>
-        <p className="mt-4 text-lg text-gray-600">
-          Explore our range of professional services designed to help you achieve your goals. From detailed consulting to innovative solutions, our team is here to support you.
-        </p>
-        <div className="relative mt-8 overflow-hidden">
-          <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-            {services.map((service, index) => (
-              <div key={index} className="min-w-full p-6 bg-white rounded-lg shadow-md">
-                <div className="flex items-center space-x-4">
-                  <Image src={service.logo} alt={service.title} width={50} height={50} className="object-contain" />
-                  <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
-                </div>
-                <p className="mt-2 text-gray-700">{service.description}</p>
-                <Link href="/services" className="mt-4 inline-block text-green-600 hover:text-green-800 transition-colors duration-300">
-                  Learn More
-                </Link>
-              </div>
-            ))}
-          </div>
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-3xl font-bold text-white">Our Services</h2>
+          <Link href="/services">
+            <span className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+              Explore All Services
+            </span>
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition">
+              <div className="text-5xl mb-4">{service.icon}</div>
+              <h3 className="text-2xl font-semibold text-white mb-2">{service.title}</h3>
+              <p className="text-gray-300">{service.description}</p>
+              <Link href="/services" className="mt-4 inline-block text-green-500 hover:underline">
+                Learn More
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>

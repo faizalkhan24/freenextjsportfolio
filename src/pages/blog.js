@@ -48,7 +48,7 @@ export default function Blog() {
             <Image
               src={post.coverPhoto}
               alt={post.title}
-              width={200}  // Add width
+              width={200}  
               height={200}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
