@@ -37,7 +37,7 @@ const AboutSection = () => (
           <ul className="mt-4 list-disc list-inside">
             <li>Integrity: We maintain the highest ethical standards in everything we do.</li>
             <li>Innovation: We continuously adapt and implement the latest technologies to combat emerging threats.</li>
-            <li>Client-Centric: We focus on delivering solutions that align with our clients' goals and priorities.</li>
+            <li>Client-Centric: We focus on delivering solutions that align with our clients&apos goals and priorities.</li>
           </ul>
         </div>
       </div>
@@ -47,7 +47,7 @@ const AboutSection = () => (
         <div>
           <h3 className="text-xl font-semibold">Our Achievements</h3>
           <p className="mt-4 text-lg">
-            Trusted by industry leaders, we have successfully secured critical infrastructure and received accolades for our pioneering work in the cybersecurity sector.
+            Trusted by industry leaders we have successfully secured critical infrastructure and received accolades for our pioneering work in the cybersecurity sector.
           </p>
         </div>
         <div className="flex justify-center">
