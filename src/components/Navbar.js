@@ -74,12 +74,12 @@ const Navbar = () => {
                 About
               </span>
             </Link>
-            <Link href="/#services">
+            <Link href="/services">
               <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600">
                 Services
               </span>
             </Link>
-            <Link href="/#projects">
+            <Link href="/projects">
               <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600">
                 Projects
               </span>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 Blog
               </span>
             </Link>
-            <Link href="/#contact">
+            <Link href="/contact">
               <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600">
                 Contact
               </span>

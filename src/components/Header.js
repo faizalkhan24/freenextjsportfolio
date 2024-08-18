@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from 'next/image'; // Import the Image component
 
 const images = [
   { src: "/images/sahil.png", alt: "3D Image 1", context: "Innovative Security Solutions" },
   { src: "/images/sahil.png", alt: "3D Image 2", context: "Advanced Threat Protection" },
-  // Add more images and contexts as needed
 ];
 
 const Header = () => {
@@ -26,7 +24,7 @@ const Header = () => {
       <div className="absolute inset-0 flex">
         <div className={`flex-1 flex justify-center items-center relative overflow-hidden`}>
           {images.map((image, index) => (
-            <Image
+            <img
               key={index}
               src={image.src}
               alt={image.alt}

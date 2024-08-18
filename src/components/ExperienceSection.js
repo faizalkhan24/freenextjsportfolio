@@ -1,6 +1,6 @@
+// components/ExperienceSection.js
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // Import the Image component
 
 const ExperienceSection = () => {
   const [activeTab, setActiveTab] = useState('experience');
@@ -45,7 +45,7 @@ const ExperienceSection = () => {
         {/* Image Side */}
         <div className="lg:w-1/2 mb-8 lg:mb-0 flex justify-center lg:justify-end">
           <div className={`transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
-            <Image
+            <img
               src={persons[currentPerson].image}
               alt="Person"
               className="w-full h-auto object-cover rounded-lg shadow-xl"
