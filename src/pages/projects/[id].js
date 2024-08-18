@@ -43,6 +43,8 @@ const ProjectDetailPage = () => {
         <Image
           src={project.imageUrl}
           alt={project.title}
+          width={200}  // Add width
+          height={200}
           className="w-full h-80 object-cover rounded-lg mb-8"
         />
         <h1 className="text-4xl font-bold mb-4">{project.title}</h1>

@@ -103,6 +103,8 @@ export default function BlogPost() {
         <Image
           src={post.coverPhoto}
           alt={post.title}
+          width={200}  // Add width
+          height={200}
           className="w-full h-64 object-cover rounded-lg mb-8"
         />
         <div

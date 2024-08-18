@@ -110,12 +110,11 @@ export default function Contact() {
             {status && <p className="text-center text-green-500">{status}</p>}
           </form>
         </div>
-        <div className="flex-1 bg-gray-900 rounded-lg shadow-md overflow-hidden h-full">
+        <div className="flex-1 bg-gray-900 rounded-lg shadow-md overflow-hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.374589983363!2d-122.41941548468111!3d37.77492927975828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b5e5a5abf%3A0x8a25a34eac9c68e3!2sSan%20Francisco%2C%20CA%2094111!5e0!3m2!1sen!2sus!4v1638828231202!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
+            className="w-full h-full border-0"
+            allowFullScreen
             loading="lazy"
             title="Google Map"
           ></iframe>

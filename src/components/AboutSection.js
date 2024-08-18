@@ -30,7 +30,7 @@ const AboutSection = () => (
           </p>
         </div>
       </div>
-      <Link href="/about-us" passHref>
+      <Link href="/aboutus" passHref>
         <span className="mt-8 inline-block bg-green-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-green-600 cursor-pointer transition-colors duration-300 ease-in-out">
           Read More
         </span>

@@ -5,7 +5,6 @@ export default function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // Dummy data for now, replace with your API call later
     const fetchPosts = async () => {
       const dummyData = [
         {
@@ -49,6 +48,8 @@ export default function Blog() {
             <Image
               src={post.coverPhoto}
               alt={post.title}
+              width={200}  // Add width
+              height={200}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
