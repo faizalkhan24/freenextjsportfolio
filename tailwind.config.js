@@ -11,6 +11,11 @@ module.exports = {
       transitionProperty: {
         opacity: "opacity",
       },
+      // colors: {
+      //   Primary: '#ECECEC',
+      //   Secondary: '#211D50',
+      //   Third: '#00E890',
+      // },
       
     },
   },

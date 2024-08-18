@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1: Company Info */}
-          <div className="mb-6">
+          <div className="mb- 6">
             <h3 className="text-lg font-semibold mb-2">About Us</h3>
             <p className="text-sm mb-4">
               CyberSecExpert is dedicated to providing innovative security solutions to protect your digital world. Our team of experts works tirelessly to ensure your safety online.
