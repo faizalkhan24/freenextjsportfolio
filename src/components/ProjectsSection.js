@@ -49,7 +49,7 @@ const ProjectsSection = () => {
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold">Recent Projects</h2>
           <Link href="/projects">
-            <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+            <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-ten transition duration-300">
               See All Projects
             </span>
           </Link>
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
               <Link href={`/projects/${project.id}`}>
-                <span className="text-green-500 hover:underline">
+                <span className="text-ten hover:underline">
                   View Details
                 </span>
               </Link>

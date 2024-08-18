@@ -64,7 +64,7 @@ const BlogSection = () => {
       <div className="flex items-center justify-between mb-12">
         <h1 className="text-4xl font-bold">Our Latest Blog</h1>
         <Link href="/blog">
-          <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+          <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-ten transition duration-300">
             Explore All Blogs
           </span>
         </Link>
@@ -89,7 +89,7 @@ const BlogSection = () => {
             <p className="mb-4">{post.description}</p>
             <Link
               href={`/blog/${post.id}`}
-              className="text-green-500 hover:underline"
+              className="text-ten hover:underline"
             >
               Read more →
             </Link>

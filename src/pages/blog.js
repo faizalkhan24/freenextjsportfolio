@@ -57,7 +57,7 @@ export default function Blog() {
             <p className="mb-4">{post.description}</p>
             <a
               href={`/blog/${post.id}`}
-              className="text-green-500 hover:underline"
+              className="text-ten hover:underline"
             >
               Read more →
             </a>

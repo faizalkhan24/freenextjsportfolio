@@ -6,7 +6,7 @@ const HeroSection = () => (
     <h1 className="text-4xl font-bold">Welcome to CyberSecExpert</h1>
     <p className="mt-4 text-lg">Your trusted partner in cybersecurity solutions.</p>
     <Link href="/contact">
-      <span className="mt-8 inline-block bg-white text-green-500 py-2 px-4 rounded-md font-semibold">Get in Touch</span>
+      <span className="mt-8 inline-block bg-white text-ten py-2 px-4 rounded-md font-semibold">Get in Touch</span>
     </Link>
   </section>
 );

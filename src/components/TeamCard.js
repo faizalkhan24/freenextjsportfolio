@@ -35,7 +35,7 @@ const TeamCard = ({
           Email:{" "}
           <a
             href={`mailto:${email}`}
-            className="text-green-500 hover:underline"
+            className="text-ten hover:underline"
           >
             {email}
           </a>
@@ -46,7 +46,7 @@ const TeamCard = ({
               href={facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-500 transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="text-gray-400 hover:text-ten transition-transform duration-300 ease-in-out transform hover:scale-110"
             >
               <FaFacebookF size={20} />
             </a>
@@ -56,7 +56,7 @@ const TeamCard = ({
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-500 transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="text-gray-400 hover:text-ten transition-transform duration-300 ease-in-out transform hover:scale-110"
             >
               <FaLinkedinIn size={20} />
             </a>
@@ -66,7 +66,7 @@ const TeamCard = ({
               href={instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-500 transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="text-gray-400 hover:text-ten transition-transform duration-300 ease-in-out transform hover:scale-110"
             >
               <FaInstagram size={20} />
             </a>

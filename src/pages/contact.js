@@ -58,7 +58,7 @@ export default function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-green-500 focus:border-green-500"
+                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-ten focus:border-ten"
                 placeholder="John Doe"
                 required
               />
@@ -76,7 +76,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-green-500 focus:border-green-500"
+                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-ten focus:border-ten"
                 placeholder="johndoe@example.com"
                 required
               />
@@ -94,7 +94,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 rows="6"
-                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-green-500 focus:border-green-500"
+                className="mt-1 block w-full px-4 py-2 rounded-md bg-sixty text-gray-200 border border-gray-600 focus:ring-ten focus:border-ten"
                 placeholder="Write your message here..."
                 required
               ></textarea>
@@ -102,12 +102,12 @@ export default function Contact() {
             <div className="text-center">
               <button
                 type="submit"
-                className="px-6 py-2 bg-ten text-white font-semibold rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                className="px-6 py-2 bg-ten text-white font-semibold rounded-md hover:bg-ten focus:outline-none focus:ring-2 focus:ring-ten focus:ring-offset-2"
               >
                 Send Message
               </button>
             </div>
-            {status && <p className="text-center text-green-500">{status}</p>}
+            {status && <p className="text-center text-ten">{status}</p>}
           </form>
         </div>
         <div className="flex-1 bg-gray-900 rounded-lg shadow-md overflow-hidden">

@@ -5,14 +5,14 @@ const About = () => {
   return (
     <div className="bg-sixty text-white min-h-screen py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto bg-gray-900 shadow-lg rounded-lg p-8 md:p-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center text-green-500 mb-12">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center text-ten mb-12">
           About Us
         </h1>
 
+        {/* First Section: Text on Left, Image on Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          {/* Left Section */}
-          <div className="flex flex-col items-center md:items-start space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-green-500 text-center md:text-left">
+          <div className="flex flex-col justify-center space-y-6">
+            <h2 className="text-3xl md:text-4xl font-semibold text-ten">
               Who We Are
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -30,10 +30,26 @@ const About = () => {
               with industry standards.
             </p>
           </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="https://via.placeholder.com/500x300.png?text=Cybersecurity+Expert"
+              alt="Cybersecurity Expert"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
 
-          {/* Right Section */}
-          <div className="flex flex-col items-center md:items-start space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-green-500 text-center md:text-left">
+        {/* Second Section: Image on Left, Text on Right */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div className="flex items-center justify-center order-last md:order-first">
+            <img
+              src="https://via.placeholder.com/500x300.png?text=Cybersecurity+Mission"
+              alt="Cybersecurity Mission"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col justify-center space-y-6">
+            <h2 className="text-3xl md:text-4xl font-semibold text-ten">
               Our Expertise
             </h2>
             <ul className="list-disc list-inside text-lg text-gray-300 leading-relaxed space-y-2">
@@ -47,22 +63,32 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-green-500 mb-6">
-            Our Mission
-          </h2>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-            Our mission is to create a safer digital environment for businesses
-            worldwide. We aim to empower organizations with the knowledge and
-            tools needed to defend against today’s complex cyber threats,
-            allowing them to focus on growth and innovation while we secure
-            their digital infrastructure.
-          </p>
+        {/* Third Section: Text on Left, Image on Right */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="flex flex-col justify-center space-y-6">
+            <h2 className="text-3xl md:text-4xl font-semibold text-ten">
+              Our Mission
+            </h2>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Our mission is to create a safer digital environment for
+              businesses worldwide. We aim to empower organizations with the
+              knowledge and tools needed to defend against today’s complex cyber
+              threats, allowing them to focus on growth and innovation while we
+              secure their digital infrastructure.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="https://via.placeholder.com/500x300.png?text=Mission+Driven"
+              alt="Mission Driven"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto mt-16">
-        <h2 className="text-3xl md:text-4xl font-semibold text-green-500 mb-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-ten mb-6 text-center">
           Meet Our Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

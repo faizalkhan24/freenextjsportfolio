@@ -42,7 +42,7 @@ const Header = () => {
           <p className="text-lg md:text-xl mb-6">
             {images[currentImage].context}
           </p>
-          <Link href="services" className="inline-block px-6 py-3 bg-ten text-white font-semibold rounded-lg hover:bg-green-400 transition duration-300">
+          <Link href="services" className="inline-block px-6 py-3 bg-ten text-white font-semibold rounded-lg hover:bg-ten transition duration-300">
             Explore Our Services
           </Link>
         </div>
