@@ -60,7 +60,7 @@ const ProjectPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
         {projects.length > 0 ? (
           projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Link key={project.id} href={`/projects/${project.id}`} className="bg-sixty rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Image
                 src={project.imageUrl}
                 alt={project.title}

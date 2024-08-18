@@ -96,7 +96,7 @@ export default function BlogPost() {
 
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white p-8">
+    <div className="min-h-screen bg-sixty text-white p-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
         <p className="text-gray-400 mb-4">{post.date} - By {post.author}</p>

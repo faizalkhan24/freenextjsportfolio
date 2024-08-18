@@ -44,12 +44,12 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-800 text-white">
+    <section className="py-16 bg-sixty text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold">Recent Projects</h2>
           <Link href="/projects">
-            <span className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+            <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
               See All Projects
             </span>
           </Link>
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition"
+              className="bg-thirty p-6 rounded-lg shadow-lg hover:bg-gray-600 transition"
             >
               <img
                 src={project.imageUrl}

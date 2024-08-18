@@ -60,11 +60,11 @@ const BlogSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gray-800 text-white p-8">
+    <section className="min-h-screen bg-sixty text-white p-8">
       <div className="flex items-center justify-between mb-12">
         <h1 className="text-4xl font-bold">Our Latest Blog</h1>
         <Link href="/blog">
-          <span className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+          <span className="inline-block bg-ten text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
             Explore All Blogs
           </span>
         </Link>
@@ -73,7 +73,7 @@ const BlogSection = () => {
         {posts.map((post) => (
           <div
             key={post.id}
-            className="bg-gray-700 p-4 rounded-lg shadow-lg hover:bg-gray-600 transition"
+            className="bg-thirty p-4 rounded-lg shadow-lg hover:bg-gray-600 transition"
           >
             <Image
               src={post.coverPhoto}

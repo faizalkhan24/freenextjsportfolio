@@ -53,11 +53,11 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white p-8">
+    <div className="min-h-screen bg-sixty text-white p-8">
       <h1 className="text-4xl font-bold text-center mb-12">Our Cybersecurity Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {services.map((service) => (
-          <div key={service.id} className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition">
+          <div key={service.id} className="bg-thirty p-6 rounded-lg shadow-lg hover:bg-gray-600 transition">
             <div className="text-5xl mb-4">{service.icon}</div>
             <h2 className="text-2xl font-semibold mb-2">{service.title}</h2>
             <p>{service.description}</p>

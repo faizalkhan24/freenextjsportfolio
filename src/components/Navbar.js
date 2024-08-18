@@ -9,34 +9,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white shadow-md border-b border-gray-600">
+    <nav className="bg-navbarandfooter text-white shadow-md border-b border-gray-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
             <Link href="/">
-              <span className="text-2xl font-bold text-green-400">CyberSecExpert</span>
+              <span className="text-2xl font-bold text-ten">
+                CyberSecExpert
+              </span>
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">
             <Link href="/aboutus">
-              <span className="hover:text-green-300">About</span>
+              <span className="hover:text-ten">About</span>
             </Link>
             <Link href="/services">
-              <span className="hover:text-green-300">Services</span>
+              <span className="hover:text-ten">Services</span>
             </Link>
             <Link href="/projects">
-              <span className="hover:text-green-300">Projects</span>
+              <span className="hover:text-ten">Projects</span>
             </Link>
             <Link href="/blog">
-              <span className="hover:text-green-300">Blog</span>
+              <span className="hover:text-ten">Blog</span>
             </Link>
             <Link href="/contact">
-              <span className="hover:text-green-300">Contact</span>
+              <span className="hover:text-ten">Contact</span>
             </Link>
           </div>
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-gray-400 hover:text-white focus:outline-none">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-400 hover:text-white focus:outline-none"
+            >
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -67,7 +72,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-700 border-t border-gray-600">
+        <div className="md:hidden bg-thirty border-t border-gray-600">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/aboutus">
               <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-600">

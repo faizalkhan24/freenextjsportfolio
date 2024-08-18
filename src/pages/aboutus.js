@@ -3,7 +3,7 @@ import TeamCard from "../components/TeamCard";
 
 const About = () => {
   return (
-    <div className="bg-gray-800 text-white min-h-screen py-16 px-4 md:px-8">
+    <div className="bg-sixty text-white min-h-screen py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto bg-gray-900 shadow-lg rounded-lg p-8 md:p-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-green-500 mb-12">
           About Us

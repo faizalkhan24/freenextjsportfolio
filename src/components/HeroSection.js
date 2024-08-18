@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const HeroSection = () => (
-  <section className="bg-green-500 text-white text-center py-16">
+  <section className="bg-ten text-white text-center py-16">
     <h1 className="text-4xl font-bold">Welcome to CyberSecExpert</h1>
     <p className="mt-4 text-lg">Your trusted partner in cybersecurity solutions.</p>
     <Link href="/contact">

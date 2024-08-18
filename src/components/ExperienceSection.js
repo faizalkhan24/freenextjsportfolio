@@ -62,8 +62,8 @@ const ExperienceSection = () => {
               onClick={() => handleTabChange('experience')}
               className={`flex-1 py-2 text-center font-semibold ${
                 activeTab === 'experience'
-                  ? 'bg-green-500 text-white'
-                  : 'bg-gray-800 text-gray-300'
+                  ? 'bg-ten text-white'
+                  : 'bg-sixty text-gray-300'
               } rounded-t-md`}
             >
               Experience
@@ -72,8 +72,8 @@ const ExperienceSection = () => {
               onClick={() => handleTabChange('education')}
               className={`flex-1 py-2 text-center font-semibold ${
                 activeTab === 'education'
-                  ? 'bg-green-500 text-white'
-                  : 'bg-gray-800 text-gray-300'
+                  ? 'bg-ten text-white'
+                  : 'bg-sixty text-gray-300'
               } rounded-t-md`}
             >
               Education
@@ -81,7 +81,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Tab Content */}
-          <div className={`bg-gray-800 p-6 rounded-lg shadow-lg transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+          <div className={`bg-sixty p-6 rounded-lg shadow-lg transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
             <h2 className="text-4xl font-bold text-white">{persons[currentPerson].name}</h2>
             <p className="mt-4 text-lg text-gray-300">
               {activeTab === 'experience'
@@ -89,7 +89,7 @@ const ExperienceSection = () => {
                 : persons[currentPerson].education}
             </p>
             <Link href="/more-details" passHref>
-              <span className="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-500 cursor-pointer">
+              <span className="mt-4 inline-block bg-ten text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-500 cursor-pointer">
                 Learn More
               </span>
             </Link>
